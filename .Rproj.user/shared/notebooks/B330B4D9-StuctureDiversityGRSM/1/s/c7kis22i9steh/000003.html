@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<style>body{background-color:white;}</style>
+<script src="lib/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="lib/bootstrap-3.3.5/css/simplex.min.css" rel="stylesheet" />
+<script src="lib/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="lib/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="lib/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="lib/kePrint-0.0.1/kePrint.js"></script>
+
+</head>
+<body>
+<table class="table" style="margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;"> plotID </th>
+   <th style="text-align:right;"> avg.dxw </th>
+   <th style="text-align:right;"> avg.p90 </th>
+   <th style="text-align:right;"> avg.d </th>
+   <th style="text-align:right;"> avg.dsd </th>
+   <th style="text-align:right;"> sd.dxw </th>
+   <th style="text-align:right;"> sd.p90 </th>
+   <th style="text-align:right;"> sd.d </th>
+   <th style="text-align:right;"> sd.dsd </th>
+   <th style="text-align:right;"> elevation </th>
+   <th style="text-align:right;"> richness </th>
+   <th style="text-align:right;"> shannon </th>
+   <th style="text-align:right;"> simpson </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> GRSM_001 </td>
+   <td style="text-align:right;"> 3.594249 </td>
+   <td style="text-align:right;"> 27.25000 </td>
+   <td style="text-align:right;"> 10.999238 </td>
+   <td style="text-align:right;"> 6.508449 </td>
+   <td style="text-align:right;"> 0.3412061 </td>
+   <td style="text-align:right;"> 1.7078251 </td>
+   <td style="text-align:right;"> 2.9777747 </td>
+   <td style="text-align:right;"> 0.8367680 </td>
+   <td style="text-align:right;"> 466.960 </td>
+   <td style="text-align:right;"> 41 </td>
+   <td style="text-align:right;"> 3.635867 </td>
+   <td style="text-align:right;"> 0.9711934 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> GRSM_002 </td>
+   <td style="text-align:right;"> 3.498016 </td>
+   <td style="text-align:right;"> 20.66667 </td>
+   <td style="text-align:right;"> 6.318675 </td>
+   <td style="text-align:right;"> 2.974474 </td>
+   <td style="text-align:right;"> 0.6344320 </td>
+   <td style="text-align:right;"> 4.6188022 </td>
+   <td style="text-align:right;"> 2.2990130 </td>
+   <td style="text-align:right;"> 0.5309908 </td>
+   <td style="text-align:right;"> 695.750 </td>
+   <td style="text-align:right;"> 9 </td>
+   <td style="text-align:right;"> 2.118649 </td>
+   <td style="text-align:right;"> 0.8711111 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> GRSM_003 </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;"> 893.860 </td>
+   <td style="text-align:right;"> 29 </td>
+   <td style="text-align:right;"> 3.295065 </td>
+   <td style="text-align:right;"> 0.9601428 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> GRSM_003 </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;"> 893.860 </td>
+   <td style="text-align:right;"> 29 </td>
+   <td style="text-align:right;"> 3.295065 </td>
+   <td style="text-align:right;"> 0.9601428 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> GRSM_004 </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;"> 442.206 </td>
+   <td style="text-align:right;"> 27 </td>
+   <td style="text-align:right;"> 3.222102 </td>
+   <td style="text-align:right;"> 0.9569028 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> GRSM_004 </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;"> 442.210 </td>
+   <td style="text-align:right;"> 27 </td>
+   <td style="text-align:right;"> 3.222102 </td>
+   <td style="text-align:right;"> 0.9569028 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> GRSM_005 </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;"> 726.235 </td>
+   <td style="text-align:right;"> 18 </td>
+   <td style="text-align:right;"> 2.785122 </td>
+   <td style="text-align:right;"> 0.9323621 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> GRSM_005 </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;"> 726.240 </td>
+   <td style="text-align:right;"> 18 </td>
+   <td style="text-align:right;"> 2.785122 </td>
+   <td style="text-align:right;"> 0.9323621 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> GRSM_006 </td>
+   <td style="text-align:right;"> 3.958516 </td>
+   <td style="text-align:right;"> 19.25000 </td>
+   <td style="text-align:right;"> 6.564377 </td>
+   <td style="text-align:right;"> 3.653599 </td>
+   <td style="text-align:right;"> 0.3152055 </td>
+   <td style="text-align:right;"> 1.5000000 </td>
+   <td style="text-align:right;"> 1.8099204 </td>
+   <td style="text-align:right;"> 0.6410859 </td>
+   <td style="text-align:right;"> 527.090 </td>
+   <td style="text-align:right;"> 22 </td>
+   <td style="text-align:right;"> 3.014630 </td>
+   <td style="text-align:right;"> 0.9464923 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> GRSM_007 </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;"> 657.164 </td>
+   <td style="text-align:right;"> 29 </td>
+   <td style="text-align:right;"> 3.302748 </td>
+   <td style="text-align:right;"> 0.9600000 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> GRSM_007 </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;"> 657.160 </td>
+   <td style="text-align:right;"> 29 </td>
+   <td style="text-align:right;"> 3.302748 </td>
+   <td style="text-align:right;"> 0.9600000 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> GRSM_008 </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;"> 784.430 </td>
+   <td style="text-align:right;"> 38 </td>
+   <td style="text-align:right;"> 3.557886 </td>
+   <td style="text-align:right;"> 0.9689349 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> GRSM_009 </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;"> 842.120 </td>
+   <td style="text-align:right;"> 31 </td>
+   <td style="text-align:right;"> 3.341639 </td>
+   <td style="text-align:right;"> 0.9601428 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> GRSM_010 </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;"> 510.590 </td>
+   <td style="text-align:right;"> 49 </td>
+   <td style="text-align:right;"> 3.803768 </td>
+   <td style="text-align:right;"> 0.9751479 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> GRSM_010 </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;"> 510.594 </td>
+   <td style="text-align:right;"> 49 </td>
+   <td style="text-align:right;"> 3.803768 </td>
+   <td style="text-align:right;"> 0.9751479 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> GRSM_011 </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;"> 824.883 </td>
+   <td style="text-align:right;"> 40 </td>
+   <td style="text-align:right;"> 3.604512 </td>
+   <td style="text-align:right;"> 0.9700255 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> GRSM_011 </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;"> 824.880 </td>
+   <td style="text-align:right;"> 40 </td>
+   <td style="text-align:right;"> 3.604512 </td>
+   <td style="text-align:right;"> 0.9700255 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> GRSM_012 </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;"> 894.180 </td>
+   <td style="text-align:right;"> 26 </td>
+   <td style="text-align:right;"> 3.183922 </td>
+   <td style="text-align:right;"> 0.9551020 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> GRSM_012 </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;"> 894.183 </td>
+   <td style="text-align:right;"> 26 </td>
+   <td style="text-align:right;"> 3.183922 </td>
+   <td style="text-align:right;"> 0.9551020 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> GRSM_013 </td>
+   <td style="text-align:right;"> 3.881557 </td>
+   <td style="text-align:right;"> 19.75000 </td>
+   <td style="text-align:right;"> 5.764669 </td>
+   <td style="text-align:right;"> 3.662815 </td>
+   <td style="text-align:right;"> 0.1375002 </td>
+   <td style="text-align:right;"> 1.2583057 </td>
+   <td style="text-align:right;"> 1.1278908 </td>
+   <td style="text-align:right;"> 1.4979285 </td>
+   <td style="text-align:right;"> 561.290 </td>
+   <td style="text-align:right;"> 31 </td>
+   <td style="text-align:right;"> 3.368447 </td>
+   <td style="text-align:right;"> 0.9626039 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> GRSM_013 </td>
+   <td style="text-align:right;"> 3.881557 </td>
+   <td style="text-align:right;"> 19.75000 </td>
+   <td style="text-align:right;"> 5.764669 </td>
+   <td style="text-align:right;"> 3.662815 </td>
+   <td style="text-align:right;"> 0.1375002 </td>
+   <td style="text-align:right;"> 1.2583057 </td>
+   <td style="text-align:right;"> 1.1278908 </td>
+   <td style="text-align:right;"> 1.4979285 </td>
+   <td style="text-align:right;"> 561.292 </td>
+   <td style="text-align:right;"> 31 </td>
+   <td style="text-align:right;"> 3.368447 </td>
+   <td style="text-align:right;"> 0.9626039 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> GRSM_014 </td>
+   <td style="text-align:right;"> 3.586552 </td>
+   <td style="text-align:right;"> 29.75000 </td>
+   <td style="text-align:right;"> 10.327739 </td>
+   <td style="text-align:right;"> 5.477093 </td>
+   <td style="text-align:right;"> 0.1216696 </td>
+   <td style="text-align:right;"> 2.7537853 </td>
+   <td style="text-align:right;"> 4.9083221 </td>
+   <td style="text-align:right;"> 2.4160089 </td>
+   <td style="text-align:right;"> 545.314 </td>
+   <td style="text-align:right;"> 34 </td>
+   <td style="text-align:right;"> 3.455624 </td>
+   <td style="text-align:right;"> 0.9659735 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> GRSM_014 </td>
+   <td style="text-align:right;"> 3.586552 </td>
+   <td style="text-align:right;"> 29.75000 </td>
+   <td style="text-align:right;"> 10.327739 </td>
+   <td style="text-align:right;"> 5.477093 </td>
+   <td style="text-align:right;"> 0.1216696 </td>
+   <td style="text-align:right;"> 2.7537853 </td>
+   <td style="text-align:right;"> 4.9083221 </td>
+   <td style="text-align:right;"> 2.4160089 </td>
+   <td style="text-align:right;"> 545.310 </td>
+   <td style="text-align:right;"> 34 </td>
+   <td style="text-align:right;"> 3.455624 </td>
+   <td style="text-align:right;"> 0.9659735 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> GRSM_015 </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;"> 437.080 </td>
+   <td style="text-align:right;"> 62 </td>
+   <td style="text-align:right;"> 4.055281 </td>
+   <td style="text-align:right;"> 0.9812925 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> GRSM_015 </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;"> 437.083 </td>
+   <td style="text-align:right;"> 62 </td>
+   <td style="text-align:right;"> 4.055281 </td>
+   <td style="text-align:right;"> 0.9812925 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> GRSM_016 </td>
+   <td style="text-align:right;"> 4.020724 </td>
+   <td style="text-align:right;"> 15.50000 </td>
+   <td style="text-align:right;"> 4.508371 </td>
+   <td style="text-align:right;"> 2.760410 </td>
+   <td style="text-align:right;"> 0.1197456 </td>
+   <td style="text-align:right;"> 3.5118846 </td>
+   <td style="text-align:right;"> 1.1620222 </td>
+   <td style="text-align:right;"> 1.7224773 </td>
+   <td style="text-align:right;"> 1777.590 </td>
+   <td style="text-align:right;"> 7 </td>
+   <td style="text-align:right;"> 1.889159 </td>
+   <td style="text-align:right;"> 0.8395062 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> GRSM_017 </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;"> 507.980 </td>
+   <td style="text-align:right;"> 35 </td>
+   <td style="text-align:right;"> 3.462801 </td>
+   <td style="text-align:right;"> 0.9651426 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> GRSM_018 </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;"> 768.910 </td>
+   <td style="text-align:right;"> 26 </td>
+   <td style="text-align:right;"> 3.184784 </td>
+   <td style="text-align:right;"> 0.9550173 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> GRSM_019 </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;"> 549.830 </td>
+   <td style="text-align:right;"> 14 </td>
+   <td style="text-align:right;"> 2.557508 </td>
+   <td style="text-align:right;"> 0.9160998 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> GRSM_020 </td>
+   <td style="text-align:right;"> 4.015492 </td>
+   <td style="text-align:right;"> 23.75000 </td>
+   <td style="text-align:right;"> 7.135233 </td>
+   <td style="text-align:right;"> 4.185606 </td>
+   <td style="text-align:right;"> 0.4073624 </td>
+   <td style="text-align:right;"> 1.7078251 </td>
+   <td style="text-align:right;"> 1.9668339 </td>
+   <td style="text-align:right;"> 0.9273539 </td>
+   <td style="text-align:right;"> 608.390 </td>
+   <td style="text-align:right;"> 44 </td>
+   <td style="text-align:right;"> 3.683876 </td>
+   <td style="text-align:right;"> 0.9714625 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> GRSM_021 </td>
+   <td style="text-align:right;"> 3.254351 </td>
+   <td style="text-align:right;"> 30.33333 </td>
+   <td style="text-align:right;"> 11.031447 </td>
+   <td style="text-align:right;"> 6.373572 </td>
+   <td style="text-align:right;"> 0.0994218 </td>
+   <td style="text-align:right;"> 0.5773503 </td>
+   <td style="text-align:right;"> 1.7018062 </td>
+   <td style="text-align:right;"> 0.5163094 </td>
+   <td style="text-align:right;"> 587.850 </td>
+   <td style="text-align:right;"> 47 </td>
+   <td style="text-align:right;"> 3.762900 </td>
+   <td style="text-align:right;"> 0.9747991 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> GRSM_022 </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;"> 694.400 </td>
+   <td style="text-align:right;"> 21 </td>
+   <td style="text-align:right;"> 2.925197 </td>
+   <td style="text-align:right;"> 0.9386056 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> GRSM_023 </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;"> 695.340 </td>
+   <td style="text-align:right;"> 33 </td>
+   <td style="text-align:right;"> 3.405281 </td>
+   <td style="text-align:right;"> 0.9635417 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> GRSM_024 </td>
+   <td style="text-align:right;"> 3.537498 </td>
+   <td style="text-align:right;"> 17.75000 </td>
+   <td style="text-align:right;"> 3.531576 </td>
+   <td style="text-align:right;"> 2.990390 </td>
+   <td style="text-align:right;"> 0.3664163 </td>
+   <td style="text-align:right;"> 0.9574271 </td>
+   <td style="text-align:right;"> 0.9559200 </td>
+   <td style="text-align:right;"> 1.2185504 </td>
+   <td style="text-align:right;"> 624.230 </td>
+   <td style="text-align:right;"> 11 </td>
+   <td style="text-align:right;"> 2.273966 </td>
+   <td style="text-align:right;"> 0.8828125 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> GRSM_025 </td>
+   <td style="text-align:right;"> 4.518169 </td>
+   <td style="text-align:right;"> 11.33333 </td>
+   <td style="text-align:right;"> 3.338699 </td>
+   <td style="text-align:right;"> 1.267311 </td>
+   <td style="text-align:right;"> 0.2797891 </td>
+   <td style="text-align:right;"> 0.5773503 </td>
+   <td style="text-align:right;"> 0.4307813 </td>
+   <td style="text-align:right;"> 0.2463115 </td>
+   <td style="text-align:right;"> 1791.070 </td>
+   <td style="text-align:right;"> 9 </td>
+   <td style="text-align:right;"> 2.145842 </td>
+   <td style="text-align:right;"> 0.8760331 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> GRSM_025 </td>
+   <td style="text-align:right;"> 4.518169 </td>
+   <td style="text-align:right;"> 11.33333 </td>
+   <td style="text-align:right;"> 3.338699 </td>
+   <td style="text-align:right;"> 1.267311 </td>
+   <td style="text-align:right;"> 0.2797891 </td>
+   <td style="text-align:right;"> 0.5773503 </td>
+   <td style="text-align:right;"> 0.4307813 </td>
+   <td style="text-align:right;"> 0.2463115 </td>
+   <td style="text-align:right;"> 1791.068 </td>
+   <td style="text-align:right;"> 9 </td>
+   <td style="text-align:right;"> 2.145842 </td>
+   <td style="text-align:right;"> 0.8760331 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> GRSM_026 </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;"> 557.450 </td>
+   <td style="text-align:right;"> 22 </td>
+   <td style="text-align:right;"> 3.039116 </td>
+   <td style="text-align:right;"> 0.9492455 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> GRSM_026 </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;"> 557.446 </td>
+   <td style="text-align:right;"> 22 </td>
+   <td style="text-align:right;"> 3.039116 </td>
+   <td style="text-align:right;"> 0.9492455 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> GRSM_027 </td>
+   <td style="text-align:right;"> 3.587692 </td>
+   <td style="text-align:right;"> 10.00000 </td>
+   <td style="text-align:right;"> 2.427538 </td>
+   <td style="text-align:right;"> 1.183763 </td>
+   <td style="text-align:right;"> 0.5963969 </td>
+   <td style="text-align:right;"> 2.8284271 </td>
+   <td style="text-align:right;"> 0.3299684 </td>
+   <td style="text-align:right;"> 0.3094890 </td>
+   <td style="text-align:right;"> 1973.240 </td>
+   <td style="text-align:right;"> 17 </td>
+   <td style="text-align:right;"> 2.780466 </td>
+   <td style="text-align:right;"> 0.9342404 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> GRSM_027 </td>
+   <td style="text-align:right;"> 3.587692 </td>
+   <td style="text-align:right;"> 10.00000 </td>
+   <td style="text-align:right;"> 2.427538 </td>
+   <td style="text-align:right;"> 1.183763 </td>
+   <td style="text-align:right;"> 0.5963969 </td>
+   <td style="text-align:right;"> 2.8284271 </td>
+   <td style="text-align:right;"> 0.3299684 </td>
+   <td style="text-align:right;"> 0.3094890 </td>
+   <td style="text-align:right;"> 1973.240 </td>
+   <td style="text-align:right;"> 17 </td>
+   <td style="text-align:right;"> 2.780466 </td>
+   <td style="text-align:right;"> 0.9342404 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> GRSM_028 </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;"> 1759.030 </td>
+   <td style="text-align:right;"> 7 </td>
+   <td style="text-align:right;"> 1.844621 </td>
+   <td style="text-align:right;"> 0.8284024 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> GRSM_028 </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;"> 1759.031 </td>
+   <td style="text-align:right;"> 7 </td>
+   <td style="text-align:right;"> 1.844621 </td>
+   <td style="text-align:right;"> 0.8284024 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> GRSM_029 </td>
+   <td style="text-align:right;"> 4.018935 </td>
+   <td style="text-align:right;"> 15.00000 </td>
+   <td style="text-align:right;"> 5.754295 </td>
+   <td style="text-align:right;"> 2.041948 </td>
+   <td style="text-align:right;"> 0.1391023 </td>
+   <td style="text-align:right;"> 0.8164966 </td>
+   <td style="text-align:right;"> 0.2572449 </td>
+   <td style="text-align:right;"> 0.2580841 </td>
+   <td style="text-align:right;"> 1786.780 </td>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 1.386294 </td>
+   <td style="text-align:right;"> 0.7500000 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> GRSM_030 </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;"> 1810.310 </td>
+   <td style="text-align:right;"> 6 </td>
+   <td style="text-align:right;"> 1.747868 </td>
+   <td style="text-align:right;"> 0.8163265 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> GRSM_055 </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;"> 624.430 </td>
+   <td style="text-align:right;"> 28 </td>
+   <td style="text-align:right;"> 3.286463 </td>
+   <td style="text-align:right;"> 0.9605142 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> GRSM_058 </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;"> 551.320 </td>
+   <td style="text-align:right;"> 44 </td>
+   <td style="text-align:right;"> 3.700129 </td>
+   <td style="text-align:right;"> 0.9730411 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> GRSM_059 </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;"> 655.000 </td>
+   <td style="text-align:right;"> 17 </td>
+   <td style="text-align:right;"> 2.761626 </td>
+   <td style="text-align:right;"> 0.9300000 </td>
+  </tr>
+</tbody>
+</table>
+</body>
+</html>

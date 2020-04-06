@@ -1,0 +1,27 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1586187551963.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "5EC8D7B3",
+    "lastKnownWriteTime" : 1586195071,
+    "last_content_update" : 1586195071600,
+    "path" : "C:/github/grsm_tls/StuctureDiversityGRSM.Rmd",
+    "project_path" : "StuctureDiversityGRSM.Rmd",
+    "properties" : {
+        "cursorPosition" : "85,31",
+        "last_setup_crc32" : "C445D34B78ee1032",
+        "scrollLine" : "74",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

@@ -1,0 +1,7 @@
+"0",""
+"0","#create table of all data"
+"0",""
+"0","options(knitr.kable.NA = """")"
+"0","df %>%"
+"0","  kable() %>%"
+"0","  kable_styling()"
